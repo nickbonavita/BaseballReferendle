@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baseball Referendle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./"><span class="mark">R</span><span>BASEBALL<br><b>REFERENDLE</b></span></a><div class="top-meta"><span class="dot"></span><span id="today">DAILY EDITION</span><button id="help" aria-label="How to play">?</button></div></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">THE DAILY BASEBALL PUZZLE</p><h1>Who’s behind<br><em>the black box?</em></h1></div><p class="side-note">A real Baseball-Reference<br>page. Three guesses.</p></section>
+    <section class="game">
+      <div class="capture-shell"><div class="capture-label"><span>LIVE PAGE CAPTURE</span><span id="day">DAY 01 / 90</span></div><div class="screenshot"><img id="page-image" alt="Redacted Baseball-Reference player page screenshot"><div class="mask photo-mask" aria-hidden="true"></div><div class="mask name-mask" aria-hidden="true"></div><div class="loading" id="loading">LOADING PAGE CAPTURE<span>Fetching today’s Baseball-Reference page</span></div></div><p class="source-note">SCREENSHOT SOURCE: BASEBALL-REFERENCE.COM <span>IDENTITY REDACTED FOR PLAY</span></p></div>
+      <aside class="panel"><div class="panel-top"><span>DAY <b id="day-number">01</b> / 90</span><span><b id="remaining">3</b> GUESSES LEFT</span></div><div class="copy"><p class="eyebrow">MAKE YOUR CALL</p><h2>Put a name<br>to the numbers.</h2><p>Study the actual page, then enter the player hidden beneath the black bars.</p></div><form id="guess-form"><label for="guess">PLAYER NAME</label><div class="input-row"><input id="guess" autocomplete="off" placeholder="Type a player name..."><button aria-label="Submit guess">→</button></div><div id="suggestions"></div></form><p class="status" id="status">You have three shots at today’s player.</p><div id="history"></div><div class="next"><span>NEXT PLAYER IN</span><strong id="countdown">--:--:--</strong><span>AT MIDNIGHT</span></div></aside>
+    </section>
+    <footer><span>90 PLAYERS · 90 DAYS</span><span>NO REPEATS · ALL ERA</span><span>EST. 2026</span></footer>
+  </main>
+  <dialog id="dialog"><button id="close" class="close">×</button><p class="eyebrow">HOW TO PLAY</p><h2>Read between<br><em>the lines.</em></h2><p>Each day is a real screenshot of an MLB player’s Baseball-Reference page. Their name and photo are covered. Use the visible page to identify them. You get three guesses, then a new page arrives at midnight.</p><button id="ready" class="ready">I’M READY →</button></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
